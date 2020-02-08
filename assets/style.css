@@ -17,6 +17,17 @@ body::-webkit-scrollbar-thumb {
 background-color: rgba(79, 18, 221, 0.836);
 outline: 1px solid slategrey;
 }
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 8.5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 .hero {
   height: 100vh;
 }
@@ -26,7 +37,7 @@ outline: 1px solid slategrey;
 .why-link {
   position: absolute;
   top: 2.7em;
-  margin-left: 60vw;
+  margin-left: 55vw;
   color: #fff;
   text-decoration: none;
 }
@@ -42,8 +53,9 @@ outline: 1px solid slategrey;
 .hamburger {
   float: right;
   position: relative;
-  bottom: 3em;
+  bottom: -1.8em;
   right: .2em;
+  cursor: pointer;
 }
 .ham {
     background-color: #fff;
