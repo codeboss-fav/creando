@@ -6,6 +6,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 body::-webkit-scrollbar {
   width: .8em;
 }
@@ -88,4 +89,13 @@ outline: 1px solid slategrey;
   .main-text h4 {
     font-size: 49px;
   }
+}
+.sup-text {
+  position: relative;
+  top: 25vh;
+  text-align: center;
+  font-size: 20px;
+}
+.cta {
+  color: #6327D8;
 }
