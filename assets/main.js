@@ -13,7 +13,7 @@ gsap.from(
         ease:"slow"});
 gsap.from(
     ".why-link", {
-        duration:3, 
+        duration:2, 
         x: -400, 
         // delay: 4,
         ease:"slow"});

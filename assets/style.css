@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: #000;
     color: #fff;
@@ -78,23 +81,77 @@ outline: 1px solid slategrey;
 .main-text {
   text-align: center;
   position: relative;
-  top: 20vh;
+  top: 12vh;
 }
 .main-text h4 {
   font-size: 86px;
   font-weight: 700;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 730px) {
   .main-text h4 {
     font-size: 49px;
+  }
+  .main-text {
+    position: relative;
+    top: 6vh;
   }
 }
 .sup-text {
   position: relative;
-  top: 25vh;
+  top: 20vh;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
 }
-.cta {
+@media screen and (max-width: 350px) {
+  .sup-text {
+    position: relative;
+    top: 7vh;
+    font-size: 15px;
+  }
+  .arrow {
+    position: relative;
+    top: 8vh;
+  }
+}
+.cta a {
   color: #6327D8;
+}
+.arrow {
+  text-align: center;
+  position: relative;
+  top: 30vh;
+}
+#call-ta {
+  height: 90vh;
+}
+.cta-text {
+  padding: 2em 0 0 0;
+}
+.cta-text h2 {
+  text-align: left;
+  font-size: 60px;
+  font-weight: 700;
+  position: relative;
+  top: 1.6em;
+}
+.cta-text p{
+  letter-spacing: 2;
+  position: relative;
+  top: 8em;
+}
+.cta-text p a{
+  color: #6327D8;
+}
+.how {
+  color: #6327D8;
+  position: relative;
+  top: 10em;
+}
+@media screen and (max-width: 450px) {
+  .cta-text h2 {
+    font-size: 49px;
+  }
+  .cta-text p {
+    font-size: 13px;
+  }
 }
