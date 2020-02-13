@@ -17,3 +17,4 @@ gsap.from(
         x: -400, 
         // delay: 4,
         ease:"slow"});
+        AOS.init();
