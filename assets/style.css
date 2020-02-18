@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 html {
-  
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 section {
@@ -55,6 +55,9 @@ outline: 1px solid slategrey;
 @media screen and (max-width: 991px) {
   .why-link {
     display: none;
+  }
+  html {
+    scroll-snap-type: none;
   }
 }
 .hamburger {
@@ -129,7 +132,7 @@ outline: 1px solid slategrey;
   height: 100vh;
 }
 .cta-text {
-  padding: 2em 0 0 0;
+  padding: 5em 0 0 0;
 }
 .cta-text h2 {
   text-align: left;
@@ -158,4 +161,35 @@ outline: 1px solid slategrey;
   .cta-text p {
     font-size: 13px;
   }
+}
+#services {
+  padding: 3em 0 0 0;
+  height: 100vh;
+}
+#services h2.des {
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 1.4em;
+}
+#services p.des {
+  font-size: medium;
+  padding-top: 1em;
+}
+.des-img {
+  text-align: right;
+}
+.dev-img {
+  text-align: left;
+  padding-top: 7em;
+}
+#services h2.dev {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: right;
+  padding-top: 1.5em;
+}
+#services p.dev {
+  font-size: medium;
+  text-align: right;
+  padding-top: 1em;
 }
