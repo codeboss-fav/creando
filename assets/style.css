@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
+  overflow-x: hidden;
 }
 section {
   scroll-snap-align: center;
@@ -35,6 +36,7 @@ outline: 1px solid slategrey;
     stroke-dashoffset: 0;
   }
 }
+
 .hero {
   height: 100vh;
 }
@@ -60,21 +62,93 @@ outline: 1px solid slategrey;
     scroll-snap-type: none;
   }
 }
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: #6327D8; 
+  background-color: rgba(98, 39, 216); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.nav-open{
+  width: 100%;
+}
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+/* .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+} */
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 .hamburger {
   float: right;
   position: relative;
   bottom: -1.8em;
   right: .2em;
   cursor: pointer;
+  display: inline-block;
+  z-index: 1; 
 }
 .ham {
     background-color: #fff;
     width: 40px;
     height: 1px;
     margin-bottom: 7px;
+    transition: all 0.5s;
+
 }
+
 .ham2 {
   width: 30px;
+}
+.change .ham1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .ham2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .ham3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
 }
 .logo-text {
   font-size: 26.93px;
@@ -192,4 +266,11 @@ outline: 1px solid slategrey;
   font-size: medium;
   text-align: right;
   padding-top: 1em;
+}
+@media screen and (max-width: 991px) {
+  .des-img {
+    position: relative;
+    bottom: 4em;
+    opacity: 30%;
+  }
 }
