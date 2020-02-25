@@ -270,7 +270,16 @@ outline: 1px solid slategrey;
 @media screen and (max-width: 991px) {
   .des-img {
     position: relative;
-    bottom: 4em;
+    bottom: 8em;
     opacity: 30%;
+  }
+  .dev-img {
+    position: relative;  
+    bottom: 6em;
+    opacity: 30%;
+  }
+  #services .dev-side {
+    position: relative;
+    bottom: 15em;
   }
 }
