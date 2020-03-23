@@ -1,0 +1,35 @@
+#me {
+  height: auto;
+}
+.section-content {
+  padding: 30px 40px;
+}
+.about-1 {
+  width: 270px;
+  height: 300px;
+}
+.about-2 {
+  width: 270px;
+  height: 300px;
+  transform: translate(50%, -30%);
+}
+.right-text h2.head-about {
+  font-size: 50px;
+  font-weight: 700;
+}
+.right-text p.p-about {
+  word-spacing: 4;
+  letter-spacing: 2;
+}
+.skill-1, .skill-2, .skill-3, .skill-4 {
+  background-color: #6327D8;
+  text-align: center;
+}
+.right-text a {
+  color: #6327D8;
+  text-decoration: none;
+  
+}
+.right-text a :hover {
+  border-bottom: 2px solid #6327D8;
+}
