@@ -50,10 +50,12 @@ outline: 1px solid slategrey;
   margin-left: 55vw;
   color: #fff;
   text-decoration: none;
+  transition: 1s;
 }
  .why-link:hover {
-  text-decoration: overline;
   color: #6327D8;
+  text-decoration: none;
+  letter-spacing: 1px;
 } 
 @media screen and (max-width: 991px) {
   .why-link {
