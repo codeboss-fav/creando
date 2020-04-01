@@ -341,7 +341,7 @@ outline: 1px solid slategrey;
   }
 }
 #contact {
-  min-height: 80vh;
+  height: auto;
   background-color: #6327D8;
 }
 .contact a {
@@ -373,9 +373,9 @@ outline: 1px solid slategrey;
 }
 
 @media screen and (max-width: 450px) {
-  #contact {
+  /* #contact {
     height: 90vh;
-  }
+  } */
   .contact-text h2 {
     font-size: 49px;
   }
