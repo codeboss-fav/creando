@@ -341,7 +341,7 @@ outline: 1px solid slategrey;
   }
 }
 #contact {
-  height: auto;
+  height: 70vh;
   background-color: #6327D8;
 }
 .contact a {
