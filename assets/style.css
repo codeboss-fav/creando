@@ -4,9 +4,9 @@ html {
   /* scroll-snap-type: y mandatory; */
   overflow-x: hidden;
 }
-section {
+/* section {
   scroll-snap-align: center;
-}
+} */
 body {
     background-color: #000;
     color: #fff;
@@ -17,7 +17,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: .8em;
+  width: .5em;
 }
 body::-webkit-scrollbar-track {
   width: 2em;
@@ -145,6 +145,17 @@ outline: 1px solid slategrey;
   letter-spacing: 3px;
   font-size: 18px;
 }
+.container-custom {
+  width: 50%;
+}
+@media screen and (max-width: 553px) {
+  .container-custom {
+    width: 100%;
+  }
+  .soc {
+    width: 80;
+  }
+}
 .social-icons {
   z-index: 3;
 }
@@ -256,28 +267,30 @@ outline: 1px solid slategrey;
 #call-ta {
   height: 100vh;
 }
+.cta-content {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+.cta-icon{
+  text-align: right;
+}
 .cta-text {
-  padding: 5em 0 0 0;
+  
 }
 .cta-text h2 {
   text-align: left;
   font-size: 60px;
   font-weight: 700;
-  position: relative;
-  top: 1.6em;
 }
 .cta-text p{
   letter-spacing: 2;
-  position: relative;
-  top: 8em;
 }
 .cta-text p a{
   color: #6327D8;
 }
 .how {
   color: #6327D8;
-  position: relative;
-  top: 10em;
+ 
 }
 @media screen and (max-width: 450px) {
   .cta-text h2 {
@@ -306,6 +319,9 @@ outline: 1px solid slategrey;
 .dev-img {
   text-align: left;
   padding-top: 7em;
+}
+.dev-row {
+  height: 200px;
 }
 #services h2.dev {
   font-size: 50px;
@@ -341,50 +357,39 @@ outline: 1px solid slategrey;
   }
 }
 #contact {
-  height: 70vh;
-  background-color: #6327D8;
+  height: auto;
+  background-color: #000000;
 }
-.contact a {
-  color: #000;
-  text-decoration: none;
+.contact-content {
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
-.contact a :hover {
-  color: #000;
-  text-decoration: overline;
-}
-
-.contact-text {
-  padding: 5em 0 0 0;
-}
-.contact-text h2 {
-  text-align: left;
+#contact h2 {
   font-size: 60px;
   font-weight: 700;
-  position: relative;
-  top: 1.6em;
 }
-.contact-text p{
-  letter-spacing: 2;
-  position: relative;
-  top: 8em;
+.hl {
+  color: #6327D8;
 }
-.contact-text p a{
-  color: #000;
+.hl:hover {
+  color: #6327D8;
 }
-
+.get-started {
+  color: #fff;
+  transition: 1s;
+  border-bottom: 1px solid #6327D8;
+}
+.get-started:hover {
+  text-decoration: none;
+  color: #6327D8;
+  letter-spacing: 2px;
+}
 @media screen and (max-width: 450px) {
-  /* #contact {
-    height: 90vh;
-  } */
+  
   .contact-text h2 {
     font-size: 49px;
   }
   .contact-text p {
     font-size: 13px;
   }
-}
-.copy-right {
-  position: relative;
-  top: 10em;
-  text-align: left;
 }
