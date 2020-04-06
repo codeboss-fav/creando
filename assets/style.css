@@ -14,6 +14,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    cursor: url('/assets/cursor.png'), auto;	
 }
 
 body::-webkit-scrollbar {
@@ -56,6 +57,7 @@ outline: 1px solid slategrey;
   color: #6327D8;
   text-decoration: none;
   letter-spacing: 1px;
+  cursor: url('/assets/hover-cursor.png'), auto;
 } 
 @media screen and (max-width: 991px) {
   .why-link {
@@ -89,10 +91,11 @@ outline: 1px solid slategrey;
   left: 0;
   top: 0;
   background-color: #6327D8; 
-  background-color: rgba(98, 39, 216); /* Black w/opacity */
+  background-color: rgba(98, 39, 216);
   overflow-x: hidden; 
   overflow-y: hidden;
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  transition: 0.5s;
+  cursor: url('/assets/hover-cursor-white.png'), auto;
 }
 .nav-open{
   width: 100%;
@@ -176,7 +179,7 @@ outline: 1px solid slategrey;
   position: relative;
   bottom: -1.8em;
   right: .2em;
-  cursor: pointer;
+  cursor: url('/assets/hover-cursor.png'), auto;
   display: inline-block;
   z-index: 1; 
 }
@@ -186,7 +189,6 @@ outline: 1px solid slategrey;
     height: 1px;
     margin-bottom: 7px;
     transition: all 0.5s;
-
 }
 
 .ham2 {
@@ -195,6 +197,7 @@ outline: 1px solid slategrey;
 .change .ham1 {
   -webkit-transform: rotate(-45deg) translate(-3px, 3px) ;
   transform: rotate(-45deg) translate(-3px, 3px) ;
+  cursor: url('/assets/hover-cursor-white.png'), auto;
 }
 
 /* Fade out the second bar */
@@ -206,6 +209,7 @@ outline: 1px solid slategrey;
 .change .ham3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
+  cursor: url('/assets/hover-cursor-white.png'), auto;
 }
 .logo-text {
   font-size: 26.93px;
@@ -254,10 +258,16 @@ outline: 1px solid slategrey;
 .cta a {
   color: #6327D8;
   text-decoration: none;
+  cursor: url('/assets/hover-cursor.png'), auto;
+  transition: 1s;
 }
 .cta a :hover {
   color: #6327D8;
-  text-decoration: overline;
+  text-decoration: none;
+  letter-spacing: 1s;
+}
+.hsl {
+  color: #6327D8;
 }
 .arrow {
   text-align: center;
@@ -274,9 +284,6 @@ outline: 1px solid slategrey;
 .cta-icon{
   text-align: right;
 }
-.cta-text {
-  
-}
 .cta-text h2 {
   text-align: left;
   font-size: 60px;
@@ -287,10 +294,18 @@ outline: 1px solid slategrey;
 }
 .cta-text p a{
   color: #6327D8;
+  cursor: url('/assets/hover-cursor.png'), auto;
 }
 .how {
   color: #6327D8;
- 
+  cursor: url('/assets/hover-cursor.png'), auto;
+  transition: 1s;
+}
+.how:hover {
+  color: #6327D8;
+  cursor: url('/assets/hover-cursor.png'), auto;
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 @media screen and (max-width: 450px) {
   .cta-text h2 {
@@ -370,9 +385,12 @@ outline: 1px solid slategrey;
 }
 .hl {
   color: #6327D8;
+  transition: 1s;
 }
 .hl:hover {
   color: #6327D8;
+  text-decoration: none;
+  cursor: url('/assets/hover-cursor.png'), auto;
 }
 .get-started {
   color: #fff;
@@ -380,12 +398,12 @@ outline: 1px solid slategrey;
   border-bottom: 1px solid #6327D8;
 }
 .get-started:hover {
+  cursor: url('/assets/hover-cursor.png'), auto;
   text-decoration: none;
   color: #6327D8;
   letter-spacing: 2px;
 }
-@media screen and (max-width: 450px) {
-  
+@media screen and (max-width: 450px) {  
   .contact-text h2 {
     font-size: 49px;
   }
